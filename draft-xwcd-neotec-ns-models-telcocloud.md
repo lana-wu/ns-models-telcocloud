@@ -9,8 +9,8 @@ number:
 date:
 consensus: true
 v: 3
-area: "Operations and Management"
-workgroup: "onions"
+# area: "Operations and Management"
+# workgroup: "onions"
 keyword:
 
  - Automation
@@ -287,7 +287,7 @@ GET /api/cloud/resources?type=compute&network&location=dc-3
 {
   "compute": {
     "vCPU": 100,
-    "GPU": 2,    
+    "GPU": 2,
     "memory": "1280GB",
     "storage": "10TB",
     "instance_type": "large"
@@ -367,7 +367,7 @@ Underlay Network Controllers may expose to Network Orchestrator s a set of netwo
 Service Attachment Points (SAPs) {{?RFC9408}}, TE Service Mapping {{?I-D.ietf-teas-te-service-mapping-yang}}, TE Tunnel {{?I-D.ietf-teas-yang-te}}, or SR Policy {{?I-D.ietf-spring-sr-policy-yang}}.
 Network Orchestrator can use these models to set up connections between the Provider Edge devices, and also customer facing ACs between CEs and PEs, DC-GWs and PEs.
 
-2. Step 2: Application Instances Deployment and Parallel Network Connectivity: This step involves deploying AI at the center DC and the edge DC. 
+2. Step 2: Application Instances Deployment and Parallel Network Connectivity: This step involves deploying AI at the center DC and the edge DC.
 With request from Super Orchestrator, Cloud Orchestrator allocates resources, including GPU clusters and storage.
 Also Network Orchestrator can configure PE.
 
